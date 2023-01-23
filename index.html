@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>dmia css logo</title>
+</head>
+
+<body>
+    <!-- A pure CSS logo of the letters "dmia" (lowercase) -->
+    <div id="dmia-logo-container">
+        <div id="dmia-logo">
+            <div id="dmia-flow-dot"></div>
+            <div id="dmia-d">
+                <div id="dmia-d-circle"></div>
+                <div id="dmia-d-line"></div>
+
+                <div id="dmia-d-line-end"></div>
+                <div id="dmia-d-line-end2"></div>
+                <div id="dmia-d-line2"></div>
+            </div>
+            <div id="dmia-dm">
+                <div id="dmia-dm-left"></div>
+                <div id="dmia-dm-right"></div>
+            </div>
+            <div id="dmia-dm">
+                <div id="dmia-dm-left"></div>
+                <div id="dmia-dm-right"></div>
+            </div>
+            <div id="dmia-m">
+                <div id="dmia-m-left"></div>
+                <div id="dmia-m-left-inner-round"></div>
+                <div id="dmia-m-mid"></div>
+                <div id="dmia-m-right"></div>
+                <div id="dmia-m-right-inner-round"></div>
+            </div>
+            <div id="dmia-mi">
+                <div id="dmia-mi-left"></div>
+                <div id="dmia-mi-right"></div>
+            </div>
+            <div id="dmia-i">
+                <div id="dmia-i-stem"></div>
+                <div id="dmia-i-dot"></div>
+            </div>
+            <div id="dmia-ia">
+                <div id="dmia-ia-left"></div>
+                <div id="dmia-ia-right"></div>
+            </div>
+            <div id="dmia-a">
+                <div id="dmia-a-circle"></div>
+                <div id="dmia-a-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        :root {
+            --main-bg-color: #fff;
+            --dmia-logo-color: #000;
+            --dmia-logo-accent-color: #ef3f36;
+            --dmia-logo-bg-color: #fff;
+        }
+
+        body {
+            background: var(--main-bg-color);
+            margin: 0;
+        }
+        /* Center the outer div */
+        #dmia-logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Border around the inner div */
+        #dmia-logo {
+            border: 1px solid var(--dmia-logo-color);
+            padding: 10px;
+            width: 193px;
+            height: 100px;
+            position: relative;
+            padding-top: 0;
+            overflow: hidden;
+            background: var(--dmia-logo-bg-color);
+        }
+
+        /* The letters */
+        #dmia-d,
+        #dmia-dm,
+        #dmia-m,
+        #dmia-mi,
+        #dmia-i,
+        #dmia-ia,
+        #dmia-a {
+            position: absolute;
+            width: 60px;
+            height: 100px;
+        }
+
+        /* The letter "d" */
+        #dmia-d {
+            left: 0;
+            bottom: 7px;
+        }
+
+        #dmia-d-circle {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--dmia-logo-bg-color);
+            position: absolute;
+            bottom: 2px;
+            left: 12px;
+            border: solid 19px var(--dmia-logo-color);
+            z-index: 1;
+        }
+
+        #dmia-d-line,
+        #dmia-d-line2,
+        #dmia-d-top-fill {
+            width: 20px;
+            height: 53px;
+            background-color: var(--dmia-logo-color);
+            position: absolute;
+            bottom: 29px;
+            left: 40px;
+        }
+
+        #dmia-d-top-fill {
+            height: 11px;
+            background: #888;
+            bottom: 72px;
+            display: none;
+        }
+
+        div#dmia-d-line {
+            height: 50px;
+            border-top-right-radius: 3px;
+            border-top-left-radius: 3px;
+        }
+
+        div#dmia-d-line2 {
+            height: 32px;
+        }
+
+        div#dmia-d-line-end,
+        div#dmia-d-line-end2 {
+            /* background: white; */
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 51px;
+            left: 33px;
+            border: solid 4px var(--dmia-logo-bg-color);
+            display: none;
+        }
+
+        div#dmia-d-line-end2 {
+            z-index: 2;
+            bottom: 68px;
+        }
+
+        /* The letter "m" */
+        #dmia-m {
+            left: 62px;
+            /* bottom: 0; */
+        }
+
+        div#dmia-m-left,
+        div#dmia-m-right {
+            width: 3px;
+            border: solid 20px;
+            height: 27px;
+            border-bottom: 0;
+            border-radius: 20px 20px 0 0;
+            position: absolute;
+            border-color: var(--dmia-logo-color);
+        }
+
+        div#dmia-m-right {
+            left: 27px;
+            border-left: solid 15px;
+            height: 8px;
+            bottom: 27px;
+            z-index: 4;
+            border-color: var(--dmia-logo-color);
+        }
+
+        div#dmia-m-left {
+            border-right: solid 15px var(--dmia-logo-color);
+        }
+
+        div#dmia-i {
+            left: 129px;
+        }
+
+        div#dmia-i-stem {
+            width: 20px;
+            background: var(--dmia-logo-color);
+            height: 45px;
+            position: absolute;
+            bottom: 10px;
+        }
+
+        div#dmia-i-dot {
+            position: absolute;
+            bottom: 44px;
+            background: var(--dmia-logo-accent-color);
+            width: 28px;
+            height: 28px;
+            border-radius: 30px;
+            border: solid 4px var(--dmia-logo-bg-color);
+            left: -12px;
+            z-index: 3;
+        }
+
+        div#dmia-d-circle-inner {
+            background: var(--dmia-logo-bg-color);
+            width: 17px;
+            height: 17px;
+            border-radius: 20px;
+            position: absolute;
+            top: -3px;
+            z-index: 10;
+            left: -3px;
+            /* outline: solid 2px var(--dmia-logo-bg-color); */
+            /* border: solid 3px var(--dmia-logo-bg-color); */
+        }
+
+        div#dmia-a {
+            left: 151px;
+            bottom: 15px;
+        }
+
+        div#dmia-a-circle {
+            border: solid 19px var(--dmia-logo-color);
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            bottom: 2px;
+            left: 0px;
+            background: var(--dmia-logo-bg-color);
+            /* outline: solid 2px var(--dmia-logo-bg-color); */
+        }
+
+        div#dmia-a-line {
+            position: absolute;
+            left: 33px;
+            width: 15px;
+            height: 48px;
+            bottom: 2px;
+            background: var(--dmia-logo-color);
+            border-radius: 3px;
+        }
+
+        div#dmia-dm,
+        div#dmia-mi,
+        div#dmia-ia {
+            width: 2px;
+            border: solid 20px var(--dmia-logo-color);
+            border-bottom-left-radius: 50%;
+            height: 2px;
+            left: 40px;
+            bottom: 14px;
+            border-top-color: rgba(0, 0, 0, 0);
+            border-bottom-right-radius: 50%;
+        }
+
+        div#dmia-m-left {
+            height: 10px;
+            bottom: 25px;
+        }
+
+        div#dmia-m-mid {
+            background: var(--dmia-logo-color);
+            width: 19px;
+            height: 20px;
+            left: 23px;
+            position: absolute;
+            bottom: 9px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        div#dmia-mi {
+            left: 107px;
+            bottom: 17px;
+        }
+
+        div#dmia-ia {
+            left: 130px;
+            bottom: 17px;
+            /* border-right-color: rgba(0,0,0,0); */
+            /* z-index: 5; */
+            /* border-left-color: rgba(0, 0, 0, 0); */
+            width: 0px;
+        }
+
+        div#dmia-m-left-inner-round,
+        div#dmia-m-right-inner-round {
+            position: absolute;
+            left: 18px;
+            background: var(--dmia-logo-bg-color);
+            width: 3px;
+            height: 3px;
+            bottom: 32px;
+            border: solid 2px var(--dmia-logo-color);
+            border-top-left-radius: 3px;
+            border-bottom: none;
+            border-top-right-radius: 3px;
+        }
+
+        div#dmia-m-right-inner-round {
+            left: 40px;
+        }
+
+        #dmia-flow-dot {
+            offset-path: path("M40,-15 40,90 C40,90 20,110 M20,110 100, 110");
+            animation: move 3000ms infinite alternate ease-in-out;
+            width: 15px;
+            height: 15px;
+            background: deepskyblue;
+            position: absolute;
+            z-index: 100;
+            border-radius: 50%;
+            display: none;
+        }
+
+        @keyframes move {
+            0% {
+                offset-distance: 0%;
+            }
+
+            100% {
+                offset-distance: 100%;
+            }
+        }
+    </style>
+
+
+</body>
+
+</html>
